@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book an appointment at Reatlega Salon, Francistown. Opening hours and location." />
+  <title>Reatlega Salon | Appointments</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Reatlega Salon Logo" class="logo-img" /><span>Reatlega Salon</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="appointments.html" class="active">Appointments</a></li>
+        <li><a href="feedback.html" class="nav-cta">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <h1>Appointments</h1>
+    <p>How to find us and book your visit</p>
+  </section>
+
+  <section class="appointments-info section-padding">
+    <div class="container appt-grid">
+
+      <!-- OPENING HOURS -->
+      <div class="col-md-6">
+  <div class="card border-0 shadow-sm h-100 p-4">
+    <h4 class="mb-4"><i class="fas fa-clock text-rose me-2"></i>Opening Hours</h4>
+        <table class="hours-table">
+          <tbody>
+            <tr><td>Monday</td><td>8:00 AM &ndash; 6:00 PM</td></tr>
+            <tr><td>Tuesday</td><td>8:00 AM &ndash; 6:00 PM</td></tr>
+            <tr><td>Wednesday</td><td>8:00 AM &ndash; 6:00 PM</td></tr>
+            <tr><td>Thursday</td><td>8:00 AM &ndash; 7:00 PM</td></tr>
+            <tr><td>Friday</td><td>8:00 AM &ndash; 7:00 PM</td></tr>
+            <tr><td>Saturday</td><td>8:00 AM &ndash; 5:00 PM</td></tr>
+            <tr><td>Sunday</td><td>10:00 AM &ndash; 3:00 PM</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- LOCATION -->
+  <div class="col-md-6">
+  <div class="card border-0 shadow-sm h-100 p-4">
+    <h4 class="mb-3"><i class="fas fa-map-marker-alt text-rose me-2"></i>Find Us</h4>
+        <p>Private Bag 009 Donga Motse<br />Francistown, Botswana</p>
+        <p><strong>Landmark:</strong> Next to the Total petrol station on the main road</p>
+        <!-- Replace with real embed from Google Maps -->
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238027.06399399044!2d25.7789!3d-24.6541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebfc16edf54de13%3A0x4d2ca19bcbd5f3ac!2sGaborone%2C%20Botswana!5e0!3m2!1sen!2s!4v1620000000000"
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+            title="Reatlega Salon location map">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- HOW TO BOOK -->
+      <div class="row g-4 text-center">
+  <div class="col-md-4">
+    <i class="fas fa-edit text-rose fs-2 mb-3"></i>
+    <h5>Online Form</h5>
+    <p class="text-muted small">Fill in our quick booking form and we will confirm within 2 hours.</p>
+    <a href="feedback.html" class="btn btn-rose rounded-pill px-4">Book Online</a>
+  </div>
+  <div class="col-md-4">
+    <i class="fab fa-whatsapp text-rose fs-2 mb-3"></i>
+    <h5>WhatsApp</h5>
+    <p class="text-muted small">Message us directly to check availability and book instantly.</p>
+    <a href="https://wa.me/26775853679" target="_blank" class="btn btn-rose rounded-pill px-4">Chat on WhatsApp</a>
+  </div>
+  <div class="col-md-4">
+    <i class="fas fa-phone text-rose fs-2 mb-3"></i>
+    <h5>Call Us</h5>
+    <p class="text-muted small">Prefer to speak to someone? Call us during opening hours.</p>
+    <a href="tel:+26775853679" class="btn btn-rose rounded-pill px-4">+267 75853679</a>
+  </div>
+</div>
+
+      <!-- FAQ -->
+      <div class="appt-card full-width">
+        <h4 class="mb-4"><i class="fas fa-question-circle text-rose me-2"></i>Frequently Asked Questions</h4>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Do I need to book in advance? <i class="fas fa-chevron-down"></i></button>
+            <div class="faq-answer"><p>We recommend booking at least 24 hours in advance, especially for hair and makeup services. Walk-ins are welcome but subject to availability.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">What is your cancellation policy? <i class="fas fa-chevron-down"></i></button>
+            <div class="faq-answer"><p>Please give us at least 12 hours notice if you need to cancel or reschedule. Late cancellations may incur a small fee.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Do you offer services for children? <i class="fas fa-chevron-down"></i></button>
+            <div class="faq-answer"><p>Yes! We offer hair services for children under 12 at a reduced rate. Please mention this when booking.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">What payment methods do you accept? <i class="fas fa-chevron-down"></i></button>
+            <div class="faq-answer"><p>We accept cash, bank transfer, and mobile money (Orange Money). Card payments coming soon.</p></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer text-white pt-5">
+  <div class="container">
+    <div class="row g-4 pb-4">
+      <div class="col-md-4 col-lg-3">
+        <h5 class="footer-heading">Reatlega Salon</h5>
+        <p class="opacity-75 small">Hair &middot; Nails &middot; Skin &middot; Makeup<br />Francistown, Botswana</p>
+      </div>
+      <div class="col-6 col-md-2">
+        <h6 class="footer-heading">Quick Links</h6>
+        <ul class="list-unstyled footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+
+      <!-- footer -->
+<footer class="footer text-white pt-5">
+  <div class="container">
+    <div class="row g-4 pb-4">
+      <div class="col-md-4 col-lg-3">
+        <h5 class="footer-heading">Reatlega Salon</h5>
+        <p class="opacity-75 small">Hair &middot; Nails &middot; Skin &middot; Makeup<br />Francistown, Botswana</p>
+      </div>
+      <div class="col-6 col-md-2">
+        <h6 class="footer-heading">Quick Links</h6>
+        <ul class="list-unstyled footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-3">
+        <h6 class="footer-heading">Contact Us</h6>
+        <p class="small opacity-75 mb-1"><i class="fas fa-map-marker-alt me-2 text-rose"></i>Plot 009, Francistown, Botswana</p>
+        <p class="small opacity-75 mb-1"><i class="fas fa-phone me-2 text-rose"></i>+267 75853679</p>
+        <p class="small opacity-75 mb-0"><i class="fas fa-envelope me-2 text-rose"></i>info@reatlegasalon.co.bw</p>
+      </div>
+      <div class="col-md-3">
+        <h6 class="footer-heading">Follow Us</h6>
+        <div class="d-flex gap-2 flex-wrap">
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://wa.me/26775853679" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom text-center py-3">
+    <p class="small opacity-50 mb-0">&copy; 2026 Reatlega Salon. All rights reserved.</p>
+  </div>
+</footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
+ 

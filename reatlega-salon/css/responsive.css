@@ -1,0 +1,100 @@
+/* ══════════════════════════════════════════════════════
+   Reatlega Salon – Responsive Stylesheet
+   Breakpoints:  Tablet  768px  |  Mobile  480px
+══════════════════════════════════════════════════════ */
+
+/* ── TABLET (max 992px) ───────────────────────────── */
+@media (max-width: 992px) {
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.7rem; }
+  .hero-content h1 { font-size: 3rem; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .why-grid      { grid-template-columns: repeat(2, 1fr); }  
+  .values-grid   { grid-template-columns: repeat(2, 1fr); }
+  .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid   { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .story-grid    { grid-template-columns: 1fr; gap: 2rem; }
+  .story-image img { height: 320px; }
+  .team-grid     { grid-template-columns: repeat(2, 1fr); }
+  .booking-options { grid-template-columns: 1fr 1fr; }
+  .appt-grid     { grid-template-columns: 1fr; }
+  .feedback-grid { grid-template-columns: 1fr; }
+}
+
+/* ── MOBILE (max 768px) ───────────────────────────── */
+@media (max-width: 768px) {
+
+  /* Hamburger menu */
+  .hamburger { display: block; }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0; right: 0;
+    background: var(--white);
+    padding: 1rem 1.5rem 2rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    border-top: 2px solid var(--rose);
+    gap: 0.2rem;
+    z-index: 999;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links li a { padding: 0.75rem 1rem; display: block; font-size: 1rem; border-radius: 8px; }
+  .nav-links li a.nav-cta { display: inline-block; margin-top: 0.5rem; }
+  .nav-container { position: relative; }
+
+  /* Hero */
+  .hero { min-height: 85vh; }
+  .hero-content h1 { font-size: 2.4rem; }
+  .hero-tagline    { font-size: 0.95rem; }
+  .hero-buttons    { flex-direction: column; align-items: center; }
+  .hero-buttons .btn { width: 260px; text-align: center; }
+
+  /* Sections */
+  .section-padding { padding: 3.5rem 0; }
+  .section-title   { font-size: 1.8rem; }
+  .services-grid   { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .why-grid        { grid-template-columns: 1fr; }
+  .values-grid     { grid-template-columns: repeat(2, 1fr); }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .gallery-grid-preview { grid-template-columns: repeat(2, 1fr); }
+  .gallery-grid    { grid-template-columns: repeat(2, 1fr); }
+
+  /* About */
+  .team-grid { grid-template-columns: 1fr; max-width: 360px; margin: 0 auto; }
+
+  /* Appointments */
+  .booking-options { grid-template-columns: 1fr; }
+
+  /* Forms */
+  .feedback-grid { grid-template-columns: 1fr; }
+  .form-row      { grid-template-columns: 1fr; }
+
+  /* CTA */
+  .cta-banner h2 { font-size: 2rem; }
+  .cta-buttons   { flex-direction: column; align-items: center; }
+  .cta-buttons .btn { width: 260px; text-align: center; }
+
+  /* Footer */
+  .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .footer      { text-align: center; }
+  .footer-contact p { justify-content: center; }
+  .social-icons     { justify-content: center; }
+
+  /* Tables */
+  .price-table { font-size: 0.88rem; }
+  .price-table th, .price-table td { padding: 0.65rem 0.6rem; }
+}
+
+/* ── SMALL MOBILE (max 480px) ─────────────────────── */
+@media (max-width: 480px) {
+  .hero-content h1   { font-size: 1.9rem; }
+  .page-header h1    { font-size: 2.2rem; }
+  .services-grid     { grid-template-columns: 1fr; }
+  .values-grid       { grid-template-columns: 1fr; }
+  .gallery-grid-preview { grid-template-columns: 1fr; }
+  .gallery-grid      { grid-template-columns: 1fr; }
+  .form-card         { padding: 1.5rem; }
+  .section-title     { font-size: 1.6rem; }
+}

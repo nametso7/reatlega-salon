@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book an appointment or leave feedback for Reatlega Salon, Gaborone." />
+  <title>Reatlega Salon | Feedback &amp; Booking</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="images/logo.png" alt="Reatlega Salon Logo" width="38" height="38" class="logo-img" />
+        <span class="brand-name">Reatlega Salon</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="appointments.html">Appointments</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-rose rounded-pill px-4 py-2" href="feedback.html">Book Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <h1>Feedback &amp; Booking</h1>
+    <p>Book an appointment or share your experience with us</p>
+  </section>
+
+  <section class="feedback-section section-padding">
+    <div class="container feedback-grid">
+
+      <!-- BOOKING FORM -->
+      <div class="form-card">
+        <h3 class="mb-4"><i class="fas fa-calendar-plus text-rose me-2"></i>Book an Appointment</h3>
+        <form id="booking-form" novalidate>
+
+          <div class="form-group">
+            <label for="full-name">Full Name <span class="required">*</span></label>
+            <input type="text" id="full-name" name="full-name" placeholder="e.g. Naledi Dlamini" required />
+            <span class="error-msg" id="name-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number <span class="required">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. +267 71 234 567" required />
+            <span class="error-msg" id="phone-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="e.g. naledi@email.com" />
+            <span class="error-msg" id="email-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service Required <span class="required">*</span></label>
+            <select id="service" name="service" required>
+              <option value="">-- Select a service --</option>
+              <optgroup label="Hair">
+                <option value="box-braids">Box Braids</option>
+                <option value="locs">Dreadlocks / Locs</option>
+                <option value="relaxer">Relaxer Treatment</option>
+                <option value="hair-colour">Hair Colour</option>
+                <option value="cut-blowout">Cut &amp; Blowout</option>
+                <option value="weave">Weave / Extensions</option>
+              </optgroup>
+              <optgroup label="Nails">
+                <option value="manicure">Classic Manicure</option>
+                <option value="gel-manicure">Gel Manicure</option>
+                <option value="acrylic">Acrylic Nails</option>
+                <option value="pedicure">Classic Pedicure</option>
+                <option value="gel-pedicure">Gel Pedicure</option>
+              </optgroup>
+              <optgroup label="Skin &amp; Facials">
+                <option value="deep-cleanse">Deep Cleanse Facial</option>
+                <option value="brightening">Brightening Facial</option>
+                <option value="hydration">Hydration Glow Facial</option>
+                <option value="eyebrow">Eyebrow Shaping</option>
+              </optgroup>
+              <optgroup label="Makeup">
+                <option value="bridal-makeup">Bridal Makeup</option>
+                <option value="event-makeup">Event Makeup</option>
+                <option value="everyday-glam">Everyday Glam</option>
+                <option value="makeup-lesson">Makeup Lesson</option>
+              </optgroup>
+            </select>
+            <span class="error-msg" id="service-error"></span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="appt-date">Preferred Date <span class="required">*</span></label>
+              <input type="date" id="appt-date" name="appt-date" required />
+              <span class="error-msg" id="date-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="appt-time">Preferred Time <span class="required">*</span></label>
+              <select id="appt-time" name="appt-time" required>
+                <option value="">-- Select time --</option>
+                <option value="08:00">8:00 AM</option>
+                <option value="09:00">9:00 AM</option>
+                <option value="10:00">10:00 AM</option>
+                <option value="11:00">11:00 AM</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="13:00">1:00 PM</option>
+                <option value="14:00">2:00 PM</option>
+                <option value="15:00">3:00 PM</option>
+                <option value="16:00">4:00 PM</option>
+                <option value="17:00">5:00 PM</option>
+              </select>
+              <span class="error-msg" id="time-error"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="Any special requests or information for your stylist..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-rose w-100 rounded-pill py-2">Submit Booking Request</button>
+          <div class="form-success" id="booking-success" style="display:none;">
+            <i class="fas fa-check-circle"></i>
+            <p>Thank you! Your booking request has been received. We will confirm your appointment within 2 hours.</p>
+          </div>
+        </form>
+      </div>
+
+      <!-- FEEDBACK / REVIEW FORM -->
+      <div class="form-card">
+        <h2><i class="fas fa-star"></i> Leave Us a Review</h2>
+        <form id="review-form" novalidate>
+
+          <div class="form-group">
+            <label for="review-name">Your Name <span class="required">*</span></label>
+            <input type="text" id="review-name" name="review-name" placeholder="e.g. Boitumelo Kgosi" required />
+            <span class="error-msg" id="rname-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="review-service">Service You Received <span class="required">*</span></label>
+            <input type="text" id="review-service" name="review-service" placeholder="e.g. Box braids, Gel nails..." required />
+            <span class="error-msg" id="rservice-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label>Your Rating <span class="required">*</span></label>
+            <div class="star-rating" id="star-rating" role="group" aria-label="Star rating">
+              <span class="star" data-value="1" tabindex="0" role="radio" aria-label="1 star"><i class="fas fa-star"></i></span>
+              <span class="star" data-value="2" tabindex="0" role="radio" aria-label="2 stars"><i class="fas fa-star"></i></span>
+              <span class="star" data-value="3" tabindex="0" role="radio" aria-label="3 stars"><i class="fas fa-star"></i></span>
+              <span class="star" data-value="4" tabindex="0" role="radio" aria-label="4 stars"><i class="fas fa-star"></i></span>
+              <span class="star" data-value="5" tabindex="0" role="radio" aria-label="5 stars"><i class="fas fa-star"></i></span>
+            </div>
+            <input type="hidden" id="rating-value" name="rating" value="" />
+            <span class="error-msg" id="rating-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="review-text">Your Review <span class="required">*</span></label>
+            <textarea id="review-text" name="review-text" rows="5" placeholder="Tell us about your experience at Reatlega Salon..." required></textarea>
+            <span class="error-msg" id="review-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="recommend">
+              <input type="checkbox" id="recommend" name="recommend" />
+              I would recommend Reatlega Salon to a friend
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-rose w-100 rounded-pill py-2">Submit Review</button>
+          <div class="form-success" id="review-success" style="display:none;">
+            <i class="fas fa-check-circle"></i>
+            <p>Thank you for your review! We truly appreciate your feedback.</p>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer text-white pt-5">
+    <div class="container">
+      <div class="row g-4 pb-4">
+        <div class="col-md-4 col-lg-3">
+          <h5 class="footer-heading">Reatlega Salon</h5>
+          <p class="opacity-75 small">Hair &middot; Nails &middot; Skin &middot; Makeup<br />Gaborone, Botswana</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <h6 class="footer-heading">Quick Links</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="appointments.html">Appointments</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <h6 class="footer-heading">Contact Us</h6>
+          <p class="small opacity-75 mb-1"><i class="fas fa-map-marker-alt me-2 text-rose"></i>Plot 123, Gaborone, Botswana</p>
+          <p class="small opacity-75 mb-1"><i class="fas fa-phone me-2 text-rose"></i>+267 XXX XXXX</p>
+          <p class="small opacity-75 mb-0"><i class="fas fa-envelope me-2 text-rose"></i>info@reatlegasalon.co.bw</p>
+        </div>
+        <div class="col-md-3">
+          <h6 class="footer-heading">Follow Us</h6>
+          <div class="d-flex gap-2 flex-wrap">
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/267XXXXXXXX" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center py-3">
+      <p class="small opacity-50 mb-0">&copy; 2026 Reatlega Salon. All rights reserved.</p>
+    </div>
+  </footer>

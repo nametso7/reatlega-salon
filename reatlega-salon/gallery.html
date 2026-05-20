@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Reatlega Salon Gallery – See our hair, nail, skin and makeup work." />
+  <title>Reatlega Salon | Gallery</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Reatlega Salon Logo" class="logo-img" /><span>Reatlega Salon</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="feedback.html" class="nav-cta">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <h1>Our Gallery</h1>
+    <p>Real work. Real results. Real beauty.</p>
+  </section>
+
+  <!-- FILTER BUTTONS -->
+  <section class="gallery-filter section-padding">
+    <div class="container">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="hair">Hair</button>
+        <button class="filter-btn" data-filter="nails">Nails</button>
+        <button class="filter-btn" data-filter="skin">Skin</button>
+        <button class="filter-btn" data-filter="makeup">Makeup</button>
+      </div>
+
+      <!-- GALLERY GRID -->
+      <div class="gallery-grid" id="gallery-grid">
+        <div class="gallery-item" data-category="hair">
+          <img src="images/gallery/hair1.jpg" alt="Box braids hairstyle" />
+          <div class="gallery-overlay"><p>Box Braids</p></div>
+        </div>
+        <div class="gallery-item" data-category="nails">
+          <img src="images/gallery/nails1.jpg" alt="Gel nail art design" />
+          <div class="gallery-overlay"><p>Gel Nail Art</p></div>
+        </div>
+        <div class="gallery-item" data-category="skin">
+          <img src="images/gallery/skin1.jpg" alt="Deep cleanse facial" />
+          <div class="gallery-overlay"><p>Deep Cleanse Facial</p></div>
+        </div>
+        <div class="gallery-item" data-category="makeup">
+          <img src="images/gallery/makeup1.jpg" alt="Bridal makeup" />
+          <div class="gallery-overlay"><p>Bridal Makeup</p></div>
+        </div>
+        <div class="gallery-item" data-category="hair">
+          <img src="images/gallery/hair2.jpg" alt="Locs retwist" />
+          <div class="gallery-overlay"><p>Locs Retwist</p></div>
+        </div>
+        <div class="gallery-item" data-category="nails">
+          <img src="images/gallery/nails2.jpg" alt="Acrylic nails" />
+          <div class="gallery-overlay"><p>Acrylic Set</p></div>
+        </div>
+        <div class="gallery-item" data-category="hair">
+          <img src="images/gallery/hair3.jpg" alt="Hair colour ombre" />
+          <div class="gallery-overlay"><p>Ombre Colour</p></div>
+        </div>
+        <div class="gallery-item" data-category="makeup">
+          <img src="images/gallery/makeup2.jpg" alt="Graduation makeup" />
+          <div class="gallery-overlay"><p>Graduation Glam</p></div>
+        </div>
+        <div class="gallery-item" data-category="skin">
+          <img src="images/gallery/skin2.jpg" alt="Brightening facial" />
+          <div class="gallery-overlay"><p>Brightening Facial</p></div>
+        </div>
+        <div class="gallery-item" data-category="nails">
+          <img src="images/gallery/nails3.jpg" alt="Pedicure" />
+          <div class="gallery-overlay"><p>Gel Pedicure</p></div>
+        </div>
+        <div class="gallery-item" data-category="hair">
+          <img src="images/gallery/hair4.jpg" alt="Weave install" />
+          <div class="gallery-overlay"><p>Weave Install</p></div>
+        </div>
+        <div class="gallery-item" data-category="makeup">
+          <img src="images/gallery/makeup3.jpg" alt="Event makeup look" />
+          <div class="gallery-overlay"><p>Event Glam</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX OVERLAY -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox"><i class="fas fa-times"></i></button>
+    <img src="" alt="" id="lightbox-img" />
+    <p id="lightbox-caption"></p>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><h3>Reatlega Salon</h3><p>Hair &middot; Nails &middot; Skin &middot; Makeup<br />Francistown, Botswana</p></div>
+      <div class="footer-links"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="about.html">About Us</a></li><li><a href="appointments.html">Appointments</a></li><li><a href="feedback.html">Feedback</a></li></ul></div>
+      <div class="footer-contact"><h4>Contact Us</h4><p><i class="fas fa-map-marker-alt"></i> Plot 009, Francistown Donga, Botswana</p><p><i class="fas fa-phone"></i> +267 75853679</p><p><i class="fas fa-envelope"></i> info@reatlegasalon.co.bw</p></div>
+      <div class="footer-social"><h4>Follow Us</h4><div class="social-icons"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a><a href="https://wa.me/26775853679" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Reatlega Salon. All rights reserved.</p></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

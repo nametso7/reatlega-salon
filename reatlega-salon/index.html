@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Reatlega Salon – Full beauty services in Francistown. Hair, nails, skin and makeup." />
+  <title>Reatlega Salon</title>
+
+  <!-- 1. Bootstrap 5 CSS  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- 2. Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- 3. Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- 4. Mo ke custom CSS gore e override Bootstrap where needed -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION BAR-->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="images/logo.png" alt="Reatlega Salon Logo" width="50" height="45" class="logo-img" />
+        <span class="brand-name">Reatlega Salon</span>
+      </a>
+
+      <!-- Bootstrap hamburger -->
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- navigation links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="appointments.html">Appointments</a></li>
+          <li class="nav-item ms-lg-2">
+            <!-- pill button for Book Now -->
+            <a class="btn btn-rose rounded-pill px-4 py-2" href="feedback.html">Book Now</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="hero d-flex align-items-center justify-content-center text-center text-white">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative z-1 py-5">
+      <p class="hero-sub text-uppercase">Welcome to Reatlega Salon</p>
+      <h1 class="display-3 fw-bold text-white mb-3">
+        Feel Beautiful.<br />Be <span class="text-blush">Reatlega.</span>
+      </h1>
+      <p class="lead mb-4">
+        Hair &nbsp;&middot;&nbsp; Nails &nbsp;&middot;&nbsp; Skin &nbsp;&middot;&nbsp; Makeup
+        &nbsp;|&nbsp; Francistown, Botswana
+      </p>
+      <div class="d-flex gap-3 justify-content-center flex-wrap">
+        <a href="feedback.html" class="btn btn-rose btn-lg rounded-pill px-4">Book an Appointment</a>
+        <a href="services.html" class="btn btn-outline-light btn-lg rounded-pill px-4">View Our Services</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SERVICES -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-2">What We Offer</h2>
+      <p class="text-center text-muted mb-5">Professional beauty treatments tailored just for you</p>
+
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <a href="services.html#hair" class="service-card card h-100 text-center text-decoration-none border-0 shadow-sm p-4">
+            <i class="fas fa-spa service-icon mb-3"></i>
+            <h5 class="card-title">Hair</h5>
+            <p class="card-text text-muted small">Braids, locs, relaxers, colour, cuts &amp; blowouts</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="services.html#nails" class="service-card card h-100 text-center text-decoration-none border-0 shadow-sm p-4">
+            <i class="fas fa-hand-sparkles service-icon mb-3"></i>
+            <h5 class="card-title">Nails</h5>
+            <p class="card-text text-muted small">Manicures, pedicures, gel, acrylics &amp; nail art</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="services.html#skin" class="service-card card h-100 text-center text-decoration-none border-0 shadow-sm p-4">
+            <i class="fas fa-face-smile service-icon mb-3"></i>
+            <h5 class="card-title">Skin &amp; Facials</h5>
+            <p class="card-text text-muted small">Deep cleanse facials, exfoliation &amp; glow treatments</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="services.html#makeup" class="service-card card h-100 text-center text-decoration-none border-0 shadow-sm p-4">
+            <i class="fas fa-brush service-icon mb-3"></i>
+            <h5 class="card-title">Makeup</h5>
+            <p class="card-text text-muted small">Bridal, events, photoshoots &amp; everyday glam</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- why choose reatlega-->
+  <section class="py-5 bg-blush">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Why Choose Reatlega?</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm text-center p-4 h-100">
+            <i class="fas fa-certificate why-icon mb-3"></i>
+            <h5>Certified Stylists</h5>
+            <p class="text-muted small mb-0">All our beauty therapists are professionally trained and certified.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm text-center p-4 h-100">
+            <i class="fas fa-clock why-icon mb-3"></i>
+            <h5>Easy Booking</h5>
+            <p class="text-muted small mb-0">Book online any time &mdash; no waiting on hold, no hassle.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm text-center p-4 h-100">
+            <i class="fas fa-star why-icon mb-3"></i>
+            <h5>5-Star Experience</h5>
+            <p class="text-muted small mb-0">From your first visit to your last, we make you feel like royalty.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- GALLERY PREVIEW -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-2">Our Work</h2>
+      <p class="text-center text-muted mb-4">A glimpse of the magic we create every day</p>
+      <div class="row g-3">
+        <div class="col-6 col-md-4">
+          <img src="images/gallery/hair1.jpg" alt="Braided hair style" class="img-fluid rounded gallery-thumb w-100" />
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="images/gallery/nails1.jpg" alt="Gel nail art" class="img-fluid rounded gallery-thumb w-100" />
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="images/gallery/skin1.jpg" alt="Facial treatment" class="img-fluid rounded gallery-thumb w-100" />
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="images/gallery/makeup1.jpg" alt="Bridal makeup" class="img-fluid rounded gallery-thumb w-100" />
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="images/gallery/hair2.jpg" alt="Locs hairstyle" class="img-fluid rounded gallery-thumb w-100" />
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="images/gallery/nails2.jpg" alt="Acrylic nails" class="img-fluid rounded gallery-thumb w-100" />
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="gallery.html" class="btn btn-rose rounded-pill px-4">See Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TESTIMONIALS -->
+  <section class="py-5 bg-blush">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">What Our Clients Say</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm p-4 h-100">
+            <p class="fst-italic text-muted">
+              "Absolutely loved my locs! The stylist took her time and the results were stunning. I will definitely be back!"
+            </p>
+            <p class="fw-bold text-rose mb-1">&#8212; Beyonce T.</p>
+            <div class="stars-gold">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm p-4 h-100">
+            <p class="fst-italic text-muted">
+              "Best nail art in Francistown, hands down. The attention to detail is unmatched and the salon is so clean and welcoming."
+            </p>
+            <p class="fw-bold text-rose mb-1">&#8212; Tumelo M.</p>
+            <div class="stars-gold">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm p-4 h-100">
+            <p class="fst-italic text-muted">
+              "Got my makeup done for my graduation and I cried happy tears when I saw myself. Thank you Reatlega Salon!"
+            </p>
+            <p class="fw-bold text-rose mb-1">&#8212; Kefilwe B.</p>
+            <div class="stars-gold">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner text-white text-center py-5">
+    <div class="container py-3">
+      <h2 class="display-5 fw-bold text-white mb-3">Ready for Your Glow-Up?</h2>
+      <p class="lead mb-4">Book your appointment today and let us take care of the rest.</p>
+      <div class="d-flex gap-3 justify-content-center flex-wrap">
+        <a href="feedback.html" class="btn btn-light btn-lg rounded-pill px-4 text-rose fw-semibold">Book Now</a>
+        <a href="https://wa.me/26775853679" target="_blank" class="btn btn-outline-light btn-lg rounded-pill px-4">
+          <i class="fab fa-whatsapp me-1"></i> WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer text-white pt-5">
+    <div class="container">
+      <div class="row g-4 pb-4">
+
+        <div class="col-md-4 col-lg-3">
+          <h5 class="footer-heading">Reatlega Salon</h5>
+          <p class="opacity-75 small">Hair &middot; Nails &middot; Skin &middot; Makeup<br />Francistown, Botswana</p>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <h6 class="footer-heading">Quick Links</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="appointments.html">Appointments</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <h6 class="footer-heading">Contact Us</h6>
+          <p class="small opacity-75 mb-1"><i class="fas fa-map-marker-alt me-2 text-rose"></i>Plot 009, Francistown Donga, Botswana</p>
+          <p class="small opacity-75 mb-1"><i class="fas fa-phone me-2 text-rose"></i>+267 75853679</p>
+          <p class="small opacity-75 mb-0"><i class="fas fa-envelope me-2 text-rose"></i>info@reatlegasalon.co.bw</p>
+        </div>
+
+        <div class="col-md-3">
+          <h6 class="footer-heading">Follow Us</h6>
+          <div class="d-flex gap-2 flex-wrap">
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/26775853679" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom text-center py-3">
+      <p class="small opacity-50 mb-0">&copy; 2026 Reatlega Salon. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
