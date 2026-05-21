@@ -1,16 +1,11 @@
-/* ══════════════════════════════════════════════════════
-   Reatlega Salon – Main Stylesheet
-   Colours:  Rose  #C9796A  |  Dark Rose  #A0522D
-             Blush #FAF0EE  |  Gold  #B8860B
-   Fonts:    Playfair Display (headings) | Inter (body)
-══════════════════════════════════════════════════════ */
+/* Reatlega Salon main css*/
 
 /* ── CSS Variables ────────────────────────────────── */
 :root {
-  --rose:       #C9796A;
-  --rose-dark:  #A0522D;
-  --rose-deep:  #7B3B2A;
-  --blush:      #FAF0EE;
+  --rose:       #FF5757;
+  --rose-dark:  #E03E3E;
+  --rose-deep:  #C42B2B;
+  --blush:      #FFF0F0;
   --blush-mid:  #F2D9D4;
   --gold:       #B8860B;
   --dark:       #2C2C2C;
