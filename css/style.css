@@ -1,6 +1,6 @@
 /* Reatlega Salon main css*/
 
-/* ── CSS Variables ────────────────────────────────── */
+/* CSS Variables */
 :root {
   --rose:       #FF5757;
   --rose-dark:  #E03E3E;
@@ -21,7 +21,7 @@
   --font-body:  'Inter', Arial, sans-serif;
 }
 
-/* ── Reset & Base ─────────────────────────────────── */
+/* Reset & Base */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body { font-family: var(--font-body); color: var(--text); background: var(--white); line-height: 1.7; }
@@ -29,14 +29,14 @@ img { max-width: 100%; height: auto; display: block; }
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 
-/* ── Typography ───────────────────────────────────── */
+/* Typography */
 h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.3; color: var(--rose-dark); }
 h1 { font-size: 2.8rem; }
 h2 { font-size: 2rem; }
 h3 { font-size: 1.4rem; }
 p  { margin-bottom: 1rem; }
 
-/* ── Layout Helpers ───────────────────────────────── */
+/* Layout Helpers */
 .container     { max-width: 1140px; margin: 0 auto; padding: 0 1.5rem; }
 .section-padding { padding: 5rem 0; }
 .bg-light      { background: var(--blush); }
@@ -44,7 +44,7 @@ p  { margin-bottom: 1rem; }
 .section-title { text-align: center; font-size: 2.2rem; margin-bottom: 0.5rem; }
 .section-sub   { text-align: center; color: var(--text-light); margin-bottom: 3rem; font-size: 1.05rem; }
 
-/* ── Buttons ──────────────────────────────────────── */
+/* Buttons */
 .btn {
   display: inline-block;
   padding: 0.85rem 2rem;
@@ -66,7 +66,7 @@ p  { margin-bottom: 1rem; }
 .btn-outline-white:hover { background: var(--white); color: var(--rose-dark); }
 .btn-full { width: 100%; text-align: center; }
 
-/* ── NAVBAR ───────────────────────────────────────── */
+/* NAVBAR */
 .navbar {
   position: sticky;
   top: 0;
@@ -126,7 +126,7 @@ p  { margin-bottom: 1rem; }
   padding: 0.5rem;
 }
 
-/* ── HERO ─────────────────────────────────────────── */
+/* HERO */
 .hero {
   position: relative;
   min-height: 92vh;
@@ -149,7 +149,7 @@ p  { margin-bottom: 1rem; }
 .hero-tagline { font-size: 1.1rem; opacity: 0.88; margin-bottom: 2.5rem; }
 .hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
-/* ── PAGE HEADER (inner pages) ────────────────────── */
+/* PAGE HEADER (inner pages) */
 .page-header {
   background: linear-gradient(135deg, var(--rose-deep) 0%, var(--rose) 100%);
   color: var(--white);
@@ -159,7 +159,7 @@ p  { margin-bottom: 1rem; }
 .page-header h1 { color: var(--white); font-size: 3rem; margin-bottom: 0.5rem; }
 .page-header p  { color: rgba(255,255,255,0.88); font-size: 1.1rem; }
 
-/* ── SERVICES STRIP ───────────────────────────────── */
+/* SERVICES STRIP */
 .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
 .service-card {
   background: var(--white);
@@ -175,13 +175,13 @@ p  { margin-bottom: 1rem; }
 .service-card h3 { margin-bottom: 0.5rem; font-size: 1.2rem; }
 .service-card p  { color: var(--text-light); font-size: 0.9rem; margin: 0; }
 
-/* ── WHY CHOOSE US ────────────────────────────────── */
+/* WHY CHOOSE US */
 .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
 .why-card  { text-align: center; padding: 2.5rem 1.5rem; background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); }
 .why-icon  { font-size: 2.5rem; color: var(--gold); margin-bottom: 1rem; }
 .why-card h3 { margin-bottom: 0.5rem; }
 
-/* ── GALLERY PREVIEW ──────────────────────────────── */
+/* GALLERY PREVIEW  */
 .gallery-grid-preview {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -196,7 +196,7 @@ p  { margin-bottom: 1rem; }
 }
 .gallery-grid-preview img:hover { transform: scale(1.03); box-shadow: var(--shadow); }
 
-/* ── FULL GALLERY PAGE ────────────────────────────── */
+/* FULL GALLERY PAGE */
 .filter-buttons { display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center; margin-bottom: 2.5rem; }
 .filter-btn {
   padding: 0.55rem 1.4rem;
@@ -230,7 +230,7 @@ p  { margin-bottom: 1rem; }
 .gallery-overlay p { color: var(--white); font-weight: 600; font-size: 0.95rem; }
 .gallery-item.hidden { display: none; }
 
-/* ── LIGHTBOX ─────────────────────────────────────── */
+/* LIGHTBOX */
 .lightbox {
   display: none;
   position: fixed; inset: 0; z-index: 2000;
@@ -262,13 +262,13 @@ p  { margin-bottom: 1rem; }
 .reviewer    { font-weight: 600; color: var(--rose-dark); margin-bottom: 0.4rem; }
 .stars i     { color: var(--gold); font-size: 0.9rem; }
 
-/* ── CTA BANNER ───────────────────────────────────── */
+/*CTA BANNER*/
 .cta-banner { background: linear-gradient(135deg, var(--rose-deep), var(--rose)); color: var(--white); text-align: center; padding: 5rem 1.5rem; }
 .cta-banner h2 { color: var(--white); font-size: 2.5rem; margin-bottom: 1rem; }
 .cta-banner p  { font-size: 1.1rem; opacity: 0.9; margin-bottom: 2rem; }
 .cta-buttons   { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
-/* ── SERVICES PAGE ────────────────────────────────── */
+/* SERVICES PAGE*/
 .service-section-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; }
 .section-icon { font-size: 2rem; color: var(--rose); }
 .price-table  { width: 100%; border-collapse: collapse; margin-bottom: 2rem; }
@@ -286,7 +286,7 @@ p  { margin-bottom: 1rem; }
 .price-table tr:hover td { background: var(--blush-mid); }
 .price-table td:last-child { font-weight: 600; color: var(--rose-dark); white-space: nowrap; }
 
-/* ── ABOUT PAGE ───────────────────────────────────── */
+/* ABOUT PAGE */
 .story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
 .story-image img { border-radius: var(--radius); box-shadow: var(--shadow); width: 100%; height: 420px; object-fit: cover; }
 .story-text h2   { margin-bottom: 1.5rem; }
@@ -300,7 +300,7 @@ p  { margin-bottom: 1rem; }
 .team-card .role { color: var(--rose); font-weight: 600; font-size: 0.9rem; padding: 0 1rem; }
 .team-card p:last-child { padding: 0.5rem 1rem 1.5rem; color: var(--text-light); font-size: 0.9rem; }
 
-/* ── APPOINTMENTS PAGE ────────────────────────────── */
+/* APPOINTMENTS PAGE */
 .appt-grid   { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
 .appt-card   { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow); }
 .appt-card.full-width { grid-column: 1 / -1; }
@@ -332,7 +332,7 @@ p  { margin-bottom: 1rem; }
 .faq-answer.open { max-height: 200px; }
 .faq-answer p { padding: 0 1.2rem 1rem; color: var(--text-light); font-size: 0.92rem; margin: 0; }
 
-/* ── FEEDBACK / FORMS ─────────────────────────────── */
+/* FEEDBACK */
 .feedback-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
 .form-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 2.5rem; box-shadow: var(--shadow); }
 .form-card h2 { display: flex; align-items: center; gap: 0.75rem; font-size: 1.5rem; margin-bottom: 2rem; }
@@ -371,7 +371,7 @@ p  { margin-bottom: 1rem; }
 .star { font-size: 1.6rem; color: #ccc; cursor: pointer; transition: var(--transition); }
 .star.selected, .star.hover { color: var(--gold); }
 
-/* ── FOOTER ───────────────────────────────────────── */
+/* FOOTER */
 .footer      { background: var(--rose-deep); color: rgba(255,255,255,0.85); padding: 4rem 0 0; }
 .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 2.5rem; padding-bottom: 3rem; }
 .footer-brand h3  { font-family: var(--font-head); color: var(--white); font-size: 1.5rem; margin-bottom: 0.75rem; }
